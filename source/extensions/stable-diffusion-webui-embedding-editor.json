@@ -9,6 +9,7 @@
     "Sampling Steps": "Sampling Steps",
     "Generate Preview": "Generate Preview",
     "stable-diffusion-webui-embedding-editor": "stable-diffusion-webui-embedding-editor",
+    "https://github.com/CodeExplode/stable-diffusion-webui-embedding-editor.git": "https://github.com/CodeExplode/stable-diffusion-webui-embedding-editor.git",
     "symbol:color-hex, symbol:color-hex, ...": "symbol:color-hex, symbol:color-hex, ...",
     "e.g. A portrait photo of embedding_name": "e.g. A portrait photo of embedding_name"
 }

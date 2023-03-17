@@ -31,5 +31,6 @@
   "Maximum number of samples, used to determine which folders to skip when continue running the create script": "Maximum number of samples, used to determine which folders to skip when continue running the create script",
   "Number of rows on the page": "Number of rows on the page",
   "Minimum number of pages per load": "Minimum number of pages per load",
-  "stable-diffusion-webui-inspiration": "stable-diffusion-webui-inspiration"
+  "stable-diffusion-webui-inspiration": "stable-diffusion-webui-inspiration",
+  "https://github.com/yfszzx/stable-diffusion-webui-inspiration.git": "https://github.com/yfszzx/stable-diffusion-webui-inspiration.git"
 }

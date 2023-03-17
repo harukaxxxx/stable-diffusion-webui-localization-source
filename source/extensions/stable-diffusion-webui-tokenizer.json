@@ -8,5 +8,6 @@
     "Tokens": "Tokens",
     "stable-diffusion-webui-tokenizer": "stable-diffusion-webui-tokenizer",
     "Prompt for tokenization": "Prompt for tokenization",
-    "Ids for tokenization (example: 9061, 631, 736)": "Ids for tokenization (example: 9061, 631, 736)"
+    "Ids for tokenization (example: 9061, 631, 736)": "Ids for tokenization (example: 9061, 631, 736)",
+    "https://github.com/AUTOMATIC1111/stable-diffusion-webui-tokenizer.git": "https://github.com/AUTOMATIC1111/stable-diffusion-webui-tokenizer.git"
 }

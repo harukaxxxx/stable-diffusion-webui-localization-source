@@ -6,5 +6,6 @@
   "Translation First": "Translation First",
   "Original First": "Original First",
   "Localization dirs": "Localization dirs",
-  "sd-webui-bilingual-localization": "sd-webui-bilingual-localization"
+  "sd-webui-bilingual-localization": "sd-webui-bilingual-localization",
+  "https://github.com/journey-ad/sd-webui-bilingual-localization.git": "https://github.com/journey-ad/sd-webui-bilingual-localization.git"
 }

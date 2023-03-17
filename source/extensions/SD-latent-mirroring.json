@@ -13,5 +13,6 @@
     "X panning": "X panning",
     "Y panning": "Y panning",
     "Maximum steps fraction to mirror at": "Maximum steps fraction to mirror at",
-    "SD-latent-mirroring": "SD-latent-mirroring"
+    "SD-latent-mirroring": "SD-latent-mirroring",
+    "https://github.com/dfaker/SD-latent-mirroring.git": "https://github.com/dfaker/SD-latent-mirroring.git"
 }

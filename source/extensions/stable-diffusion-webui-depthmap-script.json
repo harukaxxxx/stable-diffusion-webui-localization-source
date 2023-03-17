@@ -40,5 +40,6 @@
   "Translate: x, y, z": "Translate: x, y, z",
   "Crop: top, left, bottom, right": "Crop: top, left, bottom, right",
   "Dolly": "Dolly",
-  "Generate Video": "Generate Video"
+  "Generate Video": "Generate Video",
+  "https://github.com/thygate/stable-diffusion-webui-depthmap-script.git": "https://github.com/thygate/stable-diffusion-webui-depthmap-script.git"
 }

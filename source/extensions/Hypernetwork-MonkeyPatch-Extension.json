@@ -69,5 +69,6 @@
     "CosineAnnealing lr increase step": "CosineAnnealing lr increase step",
     "restricts decay value, but does not restrict gamma rate decay": "restricts decay value, but does not restrict gamma rate decay",
     "Value should be in (0-1]": "Value should be in (0-1]",
-    ". filename cannot have ',' inside, and files should be splitted by ','.": ". filename cannot have ',' inside, and files should be splitted by ','."
+    ". filename cannot have ',' inside, and files should be splitted by ','.": ". filename cannot have ',' inside, and files should be splitted by ','.",
+    "https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension.git": "https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension.git"
 }

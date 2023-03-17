@@ -11,5 +11,6 @@
     "Save category (Windows only)": "Save category (Windows only)",
     "Save generation params text": "Save generation params text",
     "Force CPU (Requires Custom Script Reload)": "Force CPU (Requires Custom Script Reload)",
-    "stable-diffusion-webui-aesthetic-image-scorer": "stable-diffusion-webui-aesthetic-image-scorer"
+    "stable-diffusion-webui-aesthetic-image-scorer": "stable-diffusion-webui-aesthetic-image-scorer",
+    "https://github.com/tsngo/stable-diffusion-webui-aesthetic-image-scorer.git": "https://github.com/tsngo/stable-diffusion-webui-aesthetic-image-scorer.git"
 }

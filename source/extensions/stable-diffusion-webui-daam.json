@@ -13,5 +13,6 @@
     "Heatmap image scale": "Heatmap image scale",
     "Trace each layers": "Trace each layers",
     "Use layers as row instead of Batch Length": "Use layers as row instead of Batch Length",
-    "stable-diffusion-webui-daam": "stable-diffusion-webui-daam"
+    "stable-diffusion-webui-daam": "stable-diffusion-webui-daam",
+    "https://github.com/toriato/stable-diffusion-webui-daam.git": "https://github.com/toriato/stable-diffusion-webui-daam.git"
 }

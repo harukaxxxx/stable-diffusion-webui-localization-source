@@ -20,5 +20,6 @@
     "Quick start": "Quick start",
     "Rate strength": "Rate strength",
     "Allow the default Euler a Sampling method. (Does not produce good results)": "Allow the default Euler a Sampling method. (Does not produce good results)",
-    "seed_travel": "seed_travel"
+    "seed_travel": "seed_travel",
+    "https://github.com/yownas/seed_travel.git": "https://github.com/yownas/seed_travel.git"
 }

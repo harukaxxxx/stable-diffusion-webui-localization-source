@@ -13,5 +13,6 @@
     "Index": "Index",
     "Limit the height of preivews to the height of the browser window (.html preview files are always limited regardless of this setting)": "Limit the height of preivews to the height of the browser window (.html preview files are always limited regardless of this setting)",
     "sd-model-preview-xd": "sd-model-preview-xd",
-    "No Preview Found": "No Preview Found"
+    "No Preview Found": "No Preview Found",
+    "https://github.com/CurtisDS/sd-model-preview-xd.git": "https://github.com/CurtisDS/sd-model-preview-xd.git"
 }

@@ -9,5 +9,6 @@
     "Cond.fix: High (recommended)": "Cond.fix: High (recommended)",
     "Cond.fix: Highest": "Cond.fix: Highest",
     "Cond.fix: Full": "Cond.fix: Full",
-    "stable-diffusion-webui-conditioning-highres-fix": "stable-diffusion-webui-conditioning-highres-fix"
+    "stable-diffusion-webui-conditioning-highres-fix": "stable-diffusion-webui-conditioning-highres-fix",
+    "https://github.com/klimaleksus/stable-diffusion-webui-conditioning-highres-fix.git": "https://github.com/klimaleksus/stable-diffusion-webui-conditioning-highres-fix.git"
 }

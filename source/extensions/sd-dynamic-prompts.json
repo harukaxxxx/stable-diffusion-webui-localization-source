@@ -125,5 +125,6 @@
     "Disable image generation. Useful if you only want to generate text prompts. (1 image will still be generated to keep Auto1111 happy.).": "Disable image generation. Useful if you only want to generate text prompts. (1 image will still be generated to keep Auto1111 happy.).",
     "Add emphasis to a randomly selected keyword in the prompt.": "Add emphasis to a randomly selected keyword in the prompt.",
     "Write template into image metadata.": "Write template into image metadata.",
-    "Note: Each model will download between 300mb and 1.4gb of data on first use.": "Note: Each model will download between 300mb and 1.4gb of data on first use."
+    "Note: Each model will download between 300mb and 1.4gb of data on first use.": "Note: Each model will download between 300mb and 1.4gb of data on first use.",
+    "https://github.com/adieyal/sd-dynamic-prompts.git": "https://github.com/adieyal/sd-dynamic-prompts.git"
 }

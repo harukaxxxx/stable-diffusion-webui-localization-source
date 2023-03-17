@@ -60,5 +60,6 @@
     "Enable optimized monocular depth estimation": "Enable optimized monocular depth estimation",
     "Only use mid-control when inference": "Only use mid-control when inference",
     "Enable CFG-Based guidance": "Enable CFG-Based guidance",
-    "sd-webui-controlnet":"sd-webui-controlnet"
+    "sd-webui-controlnet":"sd-webui-controlnet",
+    "https://github.com/Mikubill/sd-webui-controlnet.git": "https://github.com/Mikubill/sd-webui-controlnet.git"
 }
