@@ -26,5 +26,5 @@ for i in source_files:
         output_file_path = './source/extensions/' + \
             os.path.basename(source_file_path)
         with open(output_file_path, 'w', encoding='utf-8') as f:
-            json.dump(source_data, f, ensure_ascii=False, indent=4)
+            json.dump(source_data, f, ensure_ascii=False, indent=2)
     print(f'{output_file_path} extracted.')
