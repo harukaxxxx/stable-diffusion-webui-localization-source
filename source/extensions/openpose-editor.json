@@ -1,16 +1,16 @@
 {
-  "OpenPose Editor": "OpenPose Editor",
-  "width": "width",
-  "height": "height",
   "Add": "Add",
-  "Reset": "Reset",
-  "Load from JSON": "Load from JSON",
-  "Detect from image": "Detect from image",
   "Add Background image": "Add Background image",
-  "json": "json",
+  "Detect from image": "Detect from image",
+  "Load from JSON": "Load from JSON",
+  "OpenPose Editor": "OpenPose Editor",
+  "Reset": "Reset",
   "Save JSON": "Save JSON",
   "Save PNG": "Save PNG",
   "Send to": "Send to",
+  "height": "height",
+  "https://github.com/fkunn1326/openpose-editor.git": "https://github.com/fkunn1326/openpose-editor.git",
+  "json": "json",
   "openpose-editor": "openpose-editor",
-  "https://github.com/fkunn1326/openpose-editor.git": "https://github.com/fkunn1326/openpose-editor.git"
+  "width": "width"
 }

@@ -23,7 +23,10 @@
     "key": "Cache Latents",
     "tooltip": "When this box is checked latents will be cached. Caching latents will use more VRAM, but improve training speed."
   },
-  "Cancel": { "key": "Cancel", "tooltip": "Cancel training." },
+  "Cancel": {
+    "key": "Cancel",
+    "tooltip": "Cancel training."
+  },
   "Class Batch Size": {
     "key": "Class Batch Size",
     "tooltip": "How many classifier/regularization images to generate at once."
@@ -68,12 +71,18 @@
     "key": "Constant/Linear Starting Factor",
     "tooltip": "Sets the initial learning rate to the main_lr * this value. If you had a target LR of .000006 and set this to .5, the scheduler would start at .000003 and increase until it reached .000006."
   },
+  "Create": {
+    "key": "Create",
+    "tooltip": "Create the danged model already."
+  },
   "Create From Hub": {
     "key": "Create From Hub",
     "tooltip": "Import a model from Huggingface.co instead of using a local checkpoint. Hub model MUST contain diffusion weights. You can specify a local folder with a cloned model, no HF token will be needed in this case."
   },
-  "Create Model": { "key": "Create Model", "tooltip": "Create a new model." },
-  "Create": { "key": "Create", "tooltip": "Create the danged model already." },
+  "Create Model": {
+    "key": "Create Model",
+    "tooltip": "Create a new model."
+  },
   "Custom Model Name": {
     "key": "Custom Model Name",
     "tooltip": "A custom name to use when saving .ckpt and .pt files. Subdirectories will also be named this."
@@ -186,6 +195,10 @@
     "key": "Instance Token",
     "tooltip": "When using [filewords], this is the instance identifier that is unique to your subject. Should be a single word."
   },
+  "Learning Rate": {
+    "key": "Learning Rate",
+    "tooltip": "The rate at which the model learns. Default is 2e-6."
+  },
   "Learning Rate Scheduler": {
     "key": "Learning Rate Scheduler",
     "tooltip": "The learning rate scheduler to use. All schedulers use the provided warmup time except for 'constant'."
@@ -193,10 +206,6 @@
   "Learning Rate Warmup Steps": {
     "key": "Learning Rate Warmup Steps",
     "tooltip": "Number of steps for the warmup in the lr scheduler. LR will start at 0 and increase to this value over the specified number of steps."
-  },
-  "Learning Rate": {
-    "key": "Learning Rate",
-    "tooltip": "The rate at which the model learns. Default is 2e-6."
   },
   "Load Settings": {
     "key": "Load Settings",
@@ -209,14 +218,6 @@
   "Lora Model": {
     "key": "Lora Model",
     "tooltip": "The Lora model to load for continued fine-tuning or checkpoint generation."
-  },
-  "Use Lora Extended": {
-    "key": "Use Lora Extended",
-    "tooltip": "Trains the Lora model with resnet layers. This will always improves quality and editability, but leads to bigger files."
-  },
-  "Lora UNET Rank": {
-    "key": "Lora UNET Rank",
-    "tooltip": "The rank for the Lora UNET (Default 4). Higher values = better quality with large file size. Lower values = sacrifice quality with lower file size. Learning rates work differently at different ranks. Saved loras at high precision (fp32) will lead to larger lora files."
   },
   "Lora Text Encoder Rank": {
     "key": "Lora Text Encoder Rank",
@@ -233,6 +234,10 @@
   "Lora UNET Learning Rate": {
     "key": "Lora UNET Learning Rate",
     "tooltip": "The learning rate at which to train lora unet. Regular learning rate is ignored."
+  },
+  "Lora UNET Rank": {
+    "key": "Lora UNET Rank",
+    "tooltip": "The rank for the Lora UNET (Default 4). Higher values = better quality with large file size. Lower values = sacrifice quality with lower file size. Learning rates work differently at different ranks. Saved loras at high precision (fp32) will lead to larger lora files."
   },
   "Lora Weight": {
     "key": "Lora Weight",
@@ -258,12 +263,18 @@
     "key": "Mixed Precision",
     "tooltip": "Use FP16 or BF16 (if available) will help improve memory performance. Required when using 'xformers'."
   },
+  "Model": {
+    "key": "Model",
+    "tooltip": "The model to train."
+  },
   "Model Path": {
     "key": "Model Path",
     "tooltip": "The URL to the model on huggingface. Should be in the format of 'developer/model_name'."
   },
-  "Model": { "key": "Model", "tooltip": "The model to train." },
-  "Name": { "key": "Name", "tooltip": "The name of the model to create." },
+  "Name": {
+    "key": "Name",
+    "tooltip": "The name of the model to create."
+  },
   "Number of Hard Resets": {
     "key": "Number of Hard Resets",
     "tooltip": "Number of hard resets of the lr in cosine_with_restarts scheduler."
@@ -316,13 +327,13 @@
     "key": "Sample Negative Prompt",
     "tooltip": "A negative prompt to use when generating preview images."
   },
-  "Sample Prompt Template File": {
-    "key": "Sample Prompt Template File",
-    "tooltip": "The path to a txt file to use for sample prompts. Use [filewords] or [name] to insert class token in sample prompts"
-  },
   "Sample Prompt": {
     "key": "Sample Prompt",
     "tooltip": "The prompt to use to generate a sample image"
+  },
+  "Sample Prompt Template File": {
+    "key": "Sample Prompt Template File",
+    "tooltip": "The path to a txt file to use for sample prompts. Use [filewords] or [name] to insert class token in sample prompts"
   },
   "Sample Seed": {
     "key": "Sample Seed",
@@ -343,6 +354,10 @@
   "Save Checkpoint to Subdirectory": {
     "key": "Save Checkpoint to Subdirectory",
     "tooltip": "When enabled, checkpoints will be saved to a subdirectory in the selected checkpoints folder."
+  },
+  "Save EMA Weights to Generated Models": {
+    "key": "Save EMA Weights to Generated Models",
+    "tooltip": "If a model was extracted or trained with EMA weights, these will be appended separately to the model for use in training later."
   },
   "Save Model Frequency (Epochs)": {
     "key": "Save Model Frequency (Epochs)",
@@ -384,10 +399,6 @@
     "key": "Save separate diffusers snapshots when training is cancelled.",
     "tooltip": "When enabled, a unique snapshot of the diffusion weights will be saved when training is canceled. This uses more HDD space, but allows resuming from training including the optimizer state."
   },
-  "Save EMA Weights to Generated Models": {
-    "key": "Save EMA Weights to Generated Models",
-    "tooltip": "If a model was extracted or trained with EMA weights, these will be appended separately to the model for use in training later."
-  },
   "Scale Position": {
     "key": "Scale Position",
     "tooltip": "The percent in training where the 'final' learning rate should be achieved. If training at 100 epochs and this is set to 0.25, the final LR will be reached at epoch 25."
@@ -424,6 +435,10 @@
     "key": "Total Number of Class/Reg Images",
     "tooltip": "Total number of classification/regularization images to use. If no images exist, they will be generated. Set to 0 to disable prior preservation."
   },
+  "Train": {
+    "key": "Train",
+    "tooltip": "Start training."
+  },
   "Train Imagic Only": {
     "key": "Train Imagic Only",
     "tooltip": "Uses Imagic for training instead of full dreambooth, useful for training with a single instance image."
@@ -432,7 +447,6 @@
     "key": "Train Text Encoder",
     "tooltip": "Enabling this will provide better results and editability, but cost more VRAM."
   },
-  "Train": { "key": "Train", "tooltip": "Start training." },
   "Training Steps Per Image (Epochs)": {
     "key": "Training Steps Per Image (Epochs)",
     "tooltip": "This is the total number of training steps that will be performed on each instance image."
@@ -484,5 +498,9 @@
   "Use Lifetime Steps When Saving": {
     "key": "Use Lifetime Steps When Saving",
     "tooltip": "When checked, will save preview images and checkpoints using lifetime steps, versus current training steps."
+  },
+  "Use Lora Extended": {
+    "key": "Use Lora Extended",
+    "tooltip": "Trains the Lora model with resnet layers. This will always improves quality and editability, but leads to bigger files."
   }
 }
