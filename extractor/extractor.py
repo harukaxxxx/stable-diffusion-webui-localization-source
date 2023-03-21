@@ -6,6 +6,7 @@ source_dir = './extractor/'
 source_files = os.listdir(source_dir)
 source_files.remove('localization.json')
 source_files.remove('extractor.py')
+source_files.remove('extension-list-updater.py')
 source_files.remove('Put clean install localization json file here.txt')
 
 # read base data
