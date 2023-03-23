@@ -643,6 +643,7 @@
   "For SD upscale, how much overlap in pixels should there be between tiles. Tiles overlap so that when they are merged back into one picture, there is no clearly visible seam.": "For SD upscale, how much overlap in pixels should there be between tiles. Tiles overlap so that when they are merged back into one picture, there is no clearly visible seam.",
   "A directory on the same machine where the server is running.": "A directory on the same machine where the server is running.",
   "Leave blank to save images to the default path.": "Leave blank to save images to the default path.",
+  "No interpolation will be used. Requires one model; A. Allows for format conversion and VAE baking.": "No interpolation will be used. Requires one model; A. Allows for format conversion and VAE baking.",
   "Result = A": "Result = A",
   "Result = A * (1 - M) + B * M": "Result = A * (1 - M) + B * M",
   "Result = A + (B - C) * M": "Result = A + (B - C) * M",
