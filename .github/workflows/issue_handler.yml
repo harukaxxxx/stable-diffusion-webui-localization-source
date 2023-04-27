@@ -1,0 +1,26 @@
+name: issue handler
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1,13 * * *"
+
+jobs:
+  create-missing-extension-source-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
+        
+      - name: setup python
+        uses: actions/setup-python@v4.5.0
+        with:
+          python-version: "3.10.6"
+
+      - name: install dependencies
+        run: pip install requests
+
+      - name: run issue_handler.py
+        env:
+          github_api_token: ${{ secrets.GITHUB_TOKEN }}
+        run: python '.github/workflows/issue_handler.py'
