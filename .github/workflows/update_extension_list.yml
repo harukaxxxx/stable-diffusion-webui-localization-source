@@ -1,16 +1,15 @@
-name: Update extension list
-run-name: Updating extension list from https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui-extensions/master/index.json
+name: update extension list
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 16 * * *"
 
 jobs:
   buid:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repository content
+      - name: checkout repository
         uses: actions/checkout@v3
 
       - name: setup python
@@ -19,17 +18,16 @@ jobs:
           python-version: "3.10.6"
 
       - name: run python script
-        run: python 'extractor/extension-list-updater.py'
+        run: python '.github/workflows/update-extension-list.py'
 
       - name: commit files
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "✨ feat(ExtensionList.json): update extension list" --allow-empty)
+          git add source/ExtensionList.json
+          git diff-index --quiet HEAD || (git commit -m "✨ feat(ExtensionList.json): update extension list")
 
       - name: push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main

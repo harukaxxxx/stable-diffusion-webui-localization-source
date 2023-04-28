@@ -16,4 +16,4 @@ To add a new extension source file from stable-diffusion-webui, follow the steps
 
 # Modifying an existing source file
 
-To modify an existing source file, you can either repeat the "Adding a new source file" steps to update the file or manually add new text to the source file and submit a pull request.
+To modify an existing source file, you have two options: you can either follow the "Adding a New Source File" steps again to update the file, or you can manually add new text to the appropriate position in the source file and then submit a pull request.
