@@ -3,9 +3,10 @@ docstring
 """
 import os
 import json
+import sys
 import time
-import requests
 from datetime import datetime
+import requests
 
 
 def get_source_file_list():
@@ -53,12 +54,12 @@ def get_issue_list(token='', page_num=1, all_issue=None):
     }
     payload = {
         'filter': 'all',
-        'state': 'all',
         'page': page_num
     }
 
     issue_list_response = requests.get(
-        url,  data=payload, headers=header, timeout=30)
+        url,  params=payload, headers=header, timeout=30)
+
     if issue_list_response.status_code == 200:
         issues = issue_list_response.json()
         if all_issue is None:
@@ -68,10 +69,12 @@ def get_issue_list(token='', page_num=1, all_issue=None):
         link_header = issue_list_response.headers.get('link')
         if link_header is not None and 'rel="next"' in link_header:
             next_page_num = page_num + 1
-            all_issue = get_issue_list(next_page_num, all_issue, token)
+            all_issue = get_issue_list(
+                token=token, page_num=next_page_num, all_issue=all_issue)
     else:
         print(
-            f'Failed to fetch issues with code {issue_list_response.status_code}', flush=True)
+            f'Failed to fetch issues: code {issue_list_response.status_code} with message {issue_list_response.json()["message"]}', flush=True)
+        sys.exit(1)
 
     return all_issue
 
@@ -108,7 +111,8 @@ def post_issues_to_github(token, extension_list_post):
                 'https://api.github.com/rate_limit', timeout=10)
             reset_timestamp = int(response.headers['X-RateLimit-Reset'])
             reset_time = datetime.fromtimestamp(reset_timestamp)
-            print(f"Secondary rate limit exceeded, try at {reset_time}", flush=True)
+            print(
+                f"Secondary rate limit exceeded, try at {reset_time}", flush=True)
             current_timestamp = datetime.now().timestamp()
             sleep_duration = reset_timestamp - current_timestamp + 1
             time.sleep(sleep_duration)
@@ -117,7 +121,8 @@ def post_issues_to_github(token, extension_list_post):
             if response.status_code == 201:
                 print(f"issue {issue_post_data['title']} posted", flush=True)
             else:
-                print("Error posting issue:", issue_post_data["title"], flush=True)
+                print("Error posting issue:",
+                      issue_post_data["title"], flush=True)
         else:
             print("Error posting issue:", issue_post_data["title"], flush=True)
             print(response.text, flush=True)
@@ -126,7 +131,7 @@ def post_issues_to_github(token, extension_list_post):
 GITHUB_TOKEN = os.environ['github_api_token']
 source_file_list = get_source_file_list()
 extension_list = get_extension_list()
-issue_list = get_issue_list(GITHUB_TOKEN)
+issue_list = get_issue_list(token=GITHUB_TOKEN)
 post_list = compare_list(compare_list(
     extension_list, source_file_list), issue_list)
 post_issues_to_github(GITHUB_TOKEN, post_list)
