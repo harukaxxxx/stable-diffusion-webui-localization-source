@@ -18,7 +18,7 @@ jobs:
           python-version: "3.10.6"
 
       - name: run python script
-        run: python '.github/workflows/update-extension-list.py'
+        run: python '.github/workflows/update_extension_list.py'
 
       - name: commit files
         run: |
