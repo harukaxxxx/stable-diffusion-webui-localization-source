@@ -26,3 +26,4 @@ for i in SOURCE_FILES:
             os.path.basename(SOURCE_FILE_PATH)
         with open(output_file_path, 'w', encoding='utf-8') as f:
             json.dump(SOURCE_DATA, f, ensure_ascii=False, indent=2)
+    os.remove(SOURCE_FILE_PATH)

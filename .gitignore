@@ -1,1 +1,3 @@
-extractor/localization.json
+extractor/*
+!extractor/extractor.py
+!extractor/Put clean install localization json file here.txt
